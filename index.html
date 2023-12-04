@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Basic Website</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <header>
+            <h1>Welcome to Your Website</h1>
+        </header>
+        <div class="background-image" id="home-background"></div>
+        <div class="content">
+            <p>This is a basic website with various features.</p>
+            <button onclick="showVideos()">Show Videos</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <header>
+            <h2>About Us</h2>
+        </header>
+        <div class="background-image" id="about-background"></div>
+        <div class="content">
+            <p>Learn more about our website and what we do.</p>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos">
+        <header>
+            <h2>Videos</h2>
+        </header>
+        <div class="background-image" id="videos-background"></div>
+        <div class="content" id="videos-content">
+            <!-- Videos will be dynamically loaded here using JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <header>
+            <h2>Contact Us</h2>
+        </header>
+        <div class="background-image" id="contact-background"></div>
+        <div class="content">
+            <label for="message">Leave us a message:</label>
+            <input type="text" id="message" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send Message</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
